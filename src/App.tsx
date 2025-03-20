@@ -1,5 +1,4 @@
-import React from 'react';
-import { Menu, X, Instagram, Youtube, Twitter, ChevronRight, Users, Video, BarChart, MessageCircle, Phone, MessageSquare, Target, PenTool, Send, Heart, LineChart, FileText, Database } from 'lucide-react';
+import { Menu, X, Instagram, Youtube, Twitter, ChevronRight,  Video, BarChart, MessageCircle, Phone, MessageSquare, Target, PenTool, Send, Heart, LineChart, FileText, Database } from 'lucide-react';
 import { useState } from 'react';
 
 function App() {
