@@ -1,56 +1,9 @@
-import { Menu, X, Instagram, Youtube, Twitter, ChevronRight,  Video, BarChart, MessageCircle, Phone, MessageSquare, Target, PenTool, Send, Heart, LineChart, FileText, Database } from 'lucide-react';
+
+import { Menu, X, Instagram, Youtube, Twitter, ChevronRight, Video, BarChart, MessageCircle, Phone } from 'lucide-react';
 import { useState } from 'react';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const marketingFlow = [
-    {
-      icon: <MessageSquare className="w-6 h-6" />,
-      title: "お問い合わせ",
-      description: "まずはお気軽にご相談ください"
-    },
-    {
-      icon: <Target className="w-6 h-6" />,
-      title: "ヒアリング・分析",
-      description: "お客様の課題や目標を詳しくお伺いします"
-    },
-    {
-      icon: <PenTool className="w-6 h-6" />,
-      title: "戦略立案",
-      description: "目標達成のための最適なSNS戦略を計画します"
-    },
-    {
-      icon: <Video className="w-6 h-6" />,
-      title: "動画企画・制作",
-      description: "魅力的なショート動画コンテンツを制作します"
-    },
-    {
-      icon: <Send className="w-6 h-6" />,
-      title: "投稿・管理",
-      description: "最適なタイミングでコンテンツを投稿・管理します"
-    },
-    {
-      icon: <Heart className="w-6 h-6" />,
-      title: "エンゲージメント",
-      description: "コメント対応などでファン化を促進します"
-    },
-    {
-      icon: <LineChart className="w-6 h-6" />,
-      title: "効果測定・分析",
-      description: "成果を測定し、データに基づき分析します"
-    },
-    {
-      icon: <FileText className="w-6 h-6" />,
-      title: "レポート・改善",
-      description: "分析結果をご報告し、改善策をご提案します"
-    },
-    {
-      icon: <Database className="w-6 h-6" />,
-      title: "顧客管理自動化",
-      description: "ご要望に応じて、顧客管理の仕組み構築も支援します"
-    }
-  ];
 
   const services = [
     {
@@ -206,44 +159,8 @@ function App() {
         </div>
       </div>
 
-      {/* Business Description Section */}
-      <div className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="section-title">事業内容</h2>
-            <div className="mt-6 max-w-3xl mx-auto">
-              <p className="text-lg text-gray-600 leading-relaxed">
-                佐野市および周辺地域に特化した、ショート動画に強いSNSマーケティング支援を提供しています。私たちは、お客様のビジネスの成長を第一に考え、単なるフォロワー数増加だけでなく、売上向上やブランディング強化といった本質的な成果に繋がるSNS運用を代行いたします。
-              </p>
-              <p className="mt-4 text-lg text-gray-600 leading-relaxed">
-                特に、視聴者の心に響くリール動画の制作に強みを持っており、アカウントの成長とエンゲージメントの向上を実現します。また、SNS運用で得られた顧客情報を活用し、顧客管理の自動化といった仕組み構築までサポートすることで、お客様のビジネスをトータルに支援いたします。
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-20">
-            <h3 className="text-2xl font-bold text-center text-gray-900 mb-12">SNSマーケティングの流れ</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {marketingFlow.map((step, index) => (
-                <div
-                  key={index}
-                  className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 hover-scale relative overflow-hidden group"
-                >
-                  <div className="absolute top-0 right-0 bg-primary-50 w-24 h-24 rounded-full -mr-12 -mt-12 transition-transform group-hover:scale-150" />
-                  <div className="relative">
-                    <div className="text-primary-600 mb-4">{step.icon}</div>
-                    <h4 className="text-xl font-semibold text-gray-900 mb-2">{step.title}</h4>
-                    <p className="text-gray-600">{step.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Services Section */}
-      <div id="services" className="py-24 bg-gradient-to-br from-primary-50 via-white to-primary-50">
+      <div id="services" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="section-title">サービス内容</h2>
@@ -274,7 +191,7 @@ function App() {
       </div>
 
       {/* Achievements Section */}
-      <div id="achievements" className="py-24 bg-white">
+      <div id="achievements" className="py-24 bg-gradient-to-br from-primary-50 via-white to-primary-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="section-title">実績</h2>
@@ -340,7 +257,7 @@ function App() {
       </div>
 
       {/* Contact Section */}
-      <div id="contact" className="py-24 bg-gradient-to-br from-primary-50 via-white to-primary-50">
+      <div id="contact" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="section-title">お問い合わせ</h2>
